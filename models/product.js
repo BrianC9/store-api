@@ -24,7 +24,7 @@ const productSchema = new mongoose.Schema({
   company: {
     type: String,
     enum: {
-      values: ['Ikea', 'Tien21', 'Lidl', 'Conforama'],
+      values: ['ikea', 'tien21', 'lidl', 'conforama'],
       message: '{VALUE} is not a valid option',
     },
   },
