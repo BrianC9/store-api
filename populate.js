@@ -15,11 +15,11 @@ const start = async () => {
     await productModel.create(jsonProducts);
     console.log('Succes!!!');
     process.exit(0);
-    // Una vez hemos subido correctamente nuestros datos a mongodb, es necesario que dejemos de ejecturar nuestro archivo
+    // Once we have correctly uploaded the data tho our mongo DB, we need to stop the execution of this file.
   } catch (error) {
     console.lof(error);
     process.exit(1);
-    // Si ha ocurrido algun error, paramos la ejecución del programa y le indicamos la salida con un codigo de error
+    // Also if any any error was throwing while the update we need to stop the execution and exit with an error code
   }
 };
 start();
